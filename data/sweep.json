@@ -1,0 +1,12 @@
+[
+  { "id": "argentina", "country": "Argentina", "owner": "Alex" },
+  { "id": "brazil", "country": "Brazil", "owner": "Beth" },
+  { "id": "england", "country": "England", "owner": "Chris" },
+  { "id": "france", "country": "France", "owner": "Dana" },
+  { "id": "germany", "country": "Germany", "owner": "Elliot" },
+  { "id": "portugal", "country": "Portugal", "owner": "Fran" },
+  { "id": "spain", "country": "Spain", "owner": "Grace" },
+  { "id": "usa", "country": "United States", "owner": "Harper" },
+  { "id": "canada", "country": "Canada", "owner": "Ishaan" },
+  { "id": "mexico", "country": "Mexico", "owner": "Jo" }
+]
