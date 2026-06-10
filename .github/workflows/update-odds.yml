@@ -1,0 +1,27 @@
+name: Update odds
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-odds:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Fetch latest odds
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          ODDS_BOOKMAKER: betfair
+        run: node scripts/fetch-odds.js
+      - name: Commit odds update
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update World Cup odds"
