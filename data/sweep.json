@@ -3,8 +3,8 @@
 { "id": "argentina", "country": "Argentina", "owner": "Paul F" },
 { "id": "australia", "country": "Australia", "owner": "Claire" },
 { "id": "austria", "country": "Austria", "owner": "Chris B" },
-{ "id": "belgium", "country": "Belgium", "owner": "NONE" },
-{ "id": "bosnia_and_herzegovina", "country": "Bosnia & Herzegovina", "owner": "NONE" },
+{ "id": "belgium", "country": "Belgium", "owner": "Will" },
+{ "id": "bosnia_and_herzegovina", "country": "Bosnia & Herzegovina", "owner": "Darren" },
 { "id": "brazil", "country": "Brazil", "owner": "Darren" },
 { "id": "canada", "country": "Canada", "owner": "Colette" },
 { "id": "cape_verde", "country": "Cape Verde", "owner": "Chris B" },
@@ -46,5 +46,5 @@
 { "id": "turkiye", "country": "Turkiye", "owner": "Stephen" },
 { "id": "uruguay", "country": "Uruguay", "owner": "Teresa" },
 { "id": "usa", "country": "United States", "owner": "Deirdre" },
-{ "id": "uzbekistan", "country": "Uzbekistan", "owner": "NONE" }
+{ "id": "uzbekistan", "country": "Uzbekistan", "owner": "Alan" }
 ]
