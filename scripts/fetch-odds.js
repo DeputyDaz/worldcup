@@ -1,5 +1,3 @@
-
-
 const fs = require("node:fs/promises");
 
 const apiKey = process.env.ODDS_API_KEY;
@@ -109,4 +107,3 @@ function decimalToFractional(decimalOdds) {
 function gcd(a, b) {
   return b ? gcd(b, a % b) : Math.abs(a);
 }
-
