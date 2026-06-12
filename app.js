@@ -1,7 +1,7 @@
 const state = {
   sweep: [],
   odds: new Map(),
-  sort: "odds",
+  sort: "country",
   search: ""
 };
 
@@ -17,23 +17,6 @@ const defaultSweep = [
   { id: "canada", country: "Canada", owner: "Ishaan" },
   { id: "mexico", country: "Mexico", owner: "Jo" }
 ];
-
-const defaultOdds = {
-  updatedAt: null,
-  source: "sample",
-  teams: [
-    { id: "france", decimalOdds: 6.5, fractionalOdds: "11/2" },
-    { id: "brazil", decimalOdds: 7, fractionalOdds: "6/1" },
-    { id: "england", decimalOdds: 7.5, fractionalOdds: "13/2" },
-    { id: "argentina", decimalOdds: 9, fractionalOdds: "8/1" },
-    { id: "spain", decimalOdds: 9, fractionalOdds: "8/1" },
-    { id: "germany", decimalOdds: 11, fractionalOdds: "10/1" },
-    { id: "portugal", decimalOdds: 13, fractionalOdds: "12/1" },
-    { id: "usa", decimalOdds: 41, fractionalOdds: "40/1" },
-    { id: "mexico", decimalOdds: 67, fractionalOdds: "66/1" },
-    { id: "canada", decimalOdds: 101, fractionalOdds: "100/1" }
-  ]
-};
 
 const els = {
   rows: document.querySelector("#teamRows"),
@@ -137,7 +120,7 @@ function bindEvents() {
 async function init() {
   const [sweep, oddsPayload] = await Promise.all([
     loadJson("data/sweep.json", defaultSweep),
-    loadJson("data/odds.json", defaultOdds)
+    loadJson("data/odds.json", { updatedAt: null, source: "manual", teams: [] })
   ]);
 
   state.sweep = sweep;
