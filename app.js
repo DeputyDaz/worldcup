@@ -126,9 +126,15 @@ async function init() {
   state.sweep = sweep;
   state.odds = new Map((oddsPayload.teams || []).map((team) => [team.id, team]));
 
-  els.lastUpdated.textContent = oddsPayload.updatedAt
-    ? `Odds updated ${new Date(oddsPayload.updatedAt).toLocaleString()}`
-    : "Odds awaiting live feed";
+els.lastUpdated.textContent = oddsPayload.updatedAt
+  ? `Odds updated ${new Date(oddsPayload.updatedAt).toLocaleString("en-GB", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    })}`
+  : "Odds awaiting live feed";
 
   bindEvents();
   render();
