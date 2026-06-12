@@ -1,7 +1,7 @@
 const state = {
   sweep: [],
   odds: new Map(),
-  sort: "odds",
+  sort: "country",
   search: ""
 };
 
