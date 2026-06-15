@@ -49,6 +49,6 @@
       { "id": "iraq", "decimalOdds": 1001, "fractionalOdds": "1000/1" },
       { "id": "south_africa", "decimalOdds": 1501, "fractionalOdds": "1500/1" },
       { "id": "haiti", "decimalOdds": 2001, "fractionalOdds": "2000/1" },
-      { "id": "curacao", "decimalOdds": 2001, "fractionalOdds": "2000/1" },
+      { "id": "curacao", "decimalOdds": 2001, "fractionalOdds": "2000/1" }
   ]
 }
